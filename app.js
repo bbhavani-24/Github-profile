@@ -92,4 +92,4 @@ form.addEventListener('submit', (e)=>{
     getUser(user)
     search.value=''
   }
-})
+});
