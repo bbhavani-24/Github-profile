@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(102, 0, 128);
+  color: white;
+}
+.avatar{
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid rgb(151, 8, 233);
+  height: 150px;
+}
+.user-form
+{
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input{
+  width: 100%;
+  display: block;
+  background-color: rgb(207, 160, 221);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.05), 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder
+{
+  color: #fff;
+}
+
+.user-form input:focus
+{
+  outline: none;
+}
+
+.card
+{
+  max-width: 800px;
+  background-color: rgb(207, 160, 221);
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.05), 0px 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.user-info{
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2{
+  margin-top: 0;
+}
+
+.user-info ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li{
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong{
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo
+{
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(151, 8, 233);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media(max-width:500px)
+{
+  .card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form
+  {
+    max-width: 600px;
+    margin-top: 6rem;
+  }
+  .user-info ul li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .user-info h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  .repo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    margin-top: 2rem;
+  }
+  #main{
+    max-width: 900px;
+    margin-bottom: 6rem;
+  }
+  .user-form input{
+    width: 300px;
+    display: inline;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+}
